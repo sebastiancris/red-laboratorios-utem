@@ -1,0 +1,107 @@
+Sensei ahora para la pagina de Equyipamiento tambienbasado en diseño de contacto
+
+Deser un tiulo Equipamienmto
+
+un inpust buscar muy alargado cpn icono gris elgante de buscador
+
+Ma sabajo un sleecto igual de elegante que con tenga sleccionar "tipo equipo" "facultad" "Laboratorio" "Uso Iterno" "Uso Externo"
+
+Luego otro menú 
+Equipamiento Disponible
+
+E inventa 12 lemenatos d e laboriatios unversaitario clever con imágenes titulo y despcricpion de forma muy clver distrinuidas
+
+creo que seria bien 4 elementos por linea bien distrunuidos de donde sacamaos la imagems de ejmeolos para descargarlas?
+
+vamos sensei a demás el munu laboratorio debe estar an azul al pinchar comlo tiene contacto
+
+
+
+*********
+Al hacer click en labaoratior dbe ir :
+
+**titulo ->Laboratorios
+** submenú tipo tab muy elegantes --->>>Facultad de Ciencias de la Construcción y Ordenamiento Territorial /  Facultad de Ingeniería / Facultad de Humanidades y Tecnología de la Comunicación Social / Laboratorios Transversales.
+
+
+Desglose del primer menú:
+
+Titulo laboratorio de contruccion
+
+y debes imventar info de poientras unos 5 delglose s e laboraritio según menú con titulo descrucicon e imagen alineada hacia la izquierda
+
+
+Va,mo sensei 
+
+
+
+
+
+           
+            
+Servicios de la red de Laboratorios UTEM
+
+La red de laboratorios de l auniversisdad tecnológica Metropolitana (UTEM) Ofrece una amplia gama de servicios
+escpecialisados par apoyar la inverstigacion , el desarrollo tecnológico y la innovación en diversas áreas
+
+
+DESCRPCIOIN  de los servicios
+Nuestros laboratorios cuentan con equipos de ultima generación y persiona altamente calificado
+paea brindar servicios de analisios
+pruebas, mediciones y asesorías técnica. Nos enfocamos en ofrecer soluciones a medida para satisfacer las necesidades
+de nuestros clientes, tanto internos como externos a la universidad.
+
+Publico Objetivo
+
+Nuestros Srrvicios estas dirigios d Investigadores y academiscos de la UTEM* estudiantes de pregrado
+y posgrado *¨empresas y organizaciones del sector publuco yt pruvado. * emprendedores y startups ¨cualquier persona o entidad que requiera servicios
+especializados de laboratorio
+
+Solicitud de servicios
+Para solicitar nuestros servicios, por favor complete el siguente formulario o contactenos directaente para discutir sus necersidsdes especificas
+
+
+Hacer un frulmario elgente y clve que tenga
+
+Inputnnombre ingrese su inombre
+
+Corrreo electroncico  ingrrese su correo leevctrinco
+
+telefino
+ibgreso su telefibno
+
+Tipo de solcitus inventar seleest coin stipo de solicitudes mas selecione
+y text área
+
+descricooin de solicitudes
+
+
+
+
+
+
+*************
+
+
+
+https://www.utem.cl/
+
+https://www.utem.cl/wp-content/themes/UTEM050925/images/01_img_cor/00_id_corp/ig_utem.svg
+
+https://idt.utem.cl/
+
+Queremos desarrollar una página web para la Red de Laboratorios de la Universidad
+
+
+Menu alineado a la derecha
+
+LOGO ALINEADOS A LA IZQUIERDA(UTEM LAB)******************************INICIO - LABORATORIOS - SERVICIO -EQUIPO- CONTACTO "ICONO BUSCAR" "MENU TIPO BOTON QUE DIGA SOLICITAR SERVICIO"
+
+ 
+Sub-menu de Laboratorios a hacer click.
+
+FACULTADAD DE CUENCIAS DE LA CONTRUCCION Y ORDENAMIENTO TERRITORIAL -  FACULTAD DE INGENIERIA - FACILTAD DE HUMANIDADES Y TECNOLOGIA DE LA COMUNICACION SOCIAL - LABORATORIOS TRANVERSALES
+
+DESPLIEGUES DE CADA TILTULO LISTADO CON PAGINACION CON TITULO DESCRICOPN E IMAGEN CLEVER ALINEADAS A LA DERECHA
+
+Y CON LIKK A LA DESCRIPCIOM Y EL DESPLIEGUE TOTAL. CLICK PAGINA IMAGEN Y DESCRCIPCION

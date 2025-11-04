@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equipamiento | Red de Laboratorios UTEM</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+
+<!-- HEADER PRINCIPAL -->
+<header class="bg-white shadow-lg border-b border-gray-200">
+  <div class="container mx-auto flex justify-between items-center p-4">
+    <div class="flex items-center">
+      <a href="index.html" class="flex items-center">
+        <img src="https://www.utem.cl/wp-content/themes/UTEM050925/images/01_img_cor/00_id_corp/ig_utem.svg" alt="UTEM LAB" class="h-12">
+        <span class="ml-3 font-bold text-xl text-blue-800 tracking-wide">UTEM LAB</span>
+      </a>
+    </div>
+
+    <!-- MENÚ PRINCIPAL -->
+    <nav class="flex items-center space-x-6">
+      <a href="index.html" class="text-gray-700 hover:text-blue-700 transition">Inicio</a>
+      <a href="nosotros.html" class="text-gray-700 hover:text-blue-700 transition">Nosotros</a>
+      <a href="equipamiento.html" class="text-blue-700 font-semibold transition">Equipamiento</a>
+      <a href="laboratorios.html" class="text-gray-700 hover:text-blue-700 transition">Laboratorios</a>
+      <a href="contacto.html" class="text-gray-700 hover:text-blue-700 transition">Contacto</a>
+      <a href="servicios.html" class="bg-gradient-to-r from-blue-700 to-cyan-600 text-white px-4 py-2 rounded shadow-md hover:shadow-lg transition">Solicitar Servicio</a>
+    </nav>
+  </div>
+</header>
+
+
+  <!-- HERO / TÍTULO -->
+   <section class="bg-gradient-to-r from-blue-600 to-cyan-500 text-white py-20">
+    <div class="container mx-auto text-center px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 tracking-tight">Equipamiento</h1>
+      <p class="text-lg opacity-90 max-w-2xl mx-auto">
+        Explora el equipamiento disponible en la Red de Laboratorios de la UTEM. Filtra, busca y encuentra lo que necesitas.
+      </p>
+    </div>
+  </section>
+
+<!-- FILTROS BUSCADOR -->
+<section class="container mx-auto py-12 px-6">
+  <div class="max-w-6xl mx-auto space-y-6 relative">
+    <!-- Buscador con sombra elegante -->
+    <div class="shadow-xl rounded-lg overflow-hidden w-full">
+      <input type="text" placeholder="Buscar equipamiento..." class="w-full border-none p-4 focus:ring-2 focus:ring-blue-500 outline-none text-gray-700">
+    </div>
+
+    <!-- Selectores -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+      <select class="border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 outline-none transition">
+        <option>Tipo de equipo</option>
+        <option>Microscopio</option>
+        <option>Centrífuga</option>
+        <option>Analizador</option>
+      </select>
+      <select class="border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 outline-none transition">
+        <option>Facultad</option>
+        <option>Facultad de Ingeniería</option>
+        <option>Facultad de Humanidades</option>
+        <option>Facultad de Ciencias de la Construcción</option>
+      </select>
+      <select class="border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 outline-none transition">
+        <option>Laboratorio</option>
+        <option>Laboratorio de Electroquímica</option>
+        <option>Laboratorio de Materiales</option>
+        <option>Laboratorio Transversal de Biotecnología</option>
+      </select>
+      <select class="border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 outline-none transition">
+        <option>Uso</option>
+        <option>Uso Interno</option>
+        <option>Uso Externo</option>
+      </select>
+    </div>
+  </div>
+</section>
+
+<!-- EQUIPAMIENTO DISPONIBLE -->
+<section class="container mx-auto px-6 pb-20">
+  <div id="equipos-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    <!-- 1 -->
+    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+      <img src="img/1.jpg" alt="Microscopio Electrónico" class="w-full h-56 object-cover">
+      <div class="p-4">
+        <h3 class="font-bold text-xl text-blue-800 mb-2">Microscopio Electrónico</h3>
+        <p class="text-gray-700 text-sm leading-relaxed">Microscopio electrónico de barrido para análisis de superficie y caracterización de materiales.</p>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+      <img src="img/2.jpg" alt="Centrífuga de Alta Velocidad" class="w-full h-56 object-cover">
+      <div class="p-4">
+        <h3 class="font-bold text-xl text-blue-800 mb-2">Centrífuga de Alta Velocidad</h3>
+        <p class="text-gray-700 text-sm leading-relaxed">Equipo para separación de muestras biológicas y químicas mediante fuerzas centrífugas.</p>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+      <img src="img/3.jpg" alt="Espectrómetro de Absorción Atómica" class="w-full h-56 object-cover">
+      <div class="p-4">
+        <h3 class="font-bold text-xl text-blue-800 mb-2">Espectrómetro de Absorción Atómica</h3>
+        <p class="text-gray-700 text-sm leading-relaxed">Para análisis de trazas metálicas en muestras ambientalmente críticas.</p>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+      <img src="img/4.jpg" alt="Cámara Climática" class="w-full h-56 object-cover">
+      <div class="p-4">
+        <h3 class="font-bold text-xl text-blue-800 mb-2">Cámara Climática</h3>
+        <p class="text-gray-700 text-sm leading-relaxed">Simulación de condiciones de temperatura y humedad para pruebas de materiales.</p>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+      <img src="img/5.jpg" alt="Analizador de Gases" class="w-full h-56 object-cover">
+      <div class="p-4">
+        <h3 class="font-bold text-xl text-blue-800 mb-2">Analizador de Gases</h3>
+        <p class="text-gray-700 text-sm leading-relaxed">Medición de emisiones y análisis de calidad del aire en laboratorio.</p>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+      <img src="img/6.jpg" alt="Espectrómetro Raman" class="w-full h-56 object-cover">
+      <div class="p-4">
+        <h3 class="font-bold text-xl text-blue-800 mb-2">Espectrómetro Raman</h3>
+        <p class="text-gray-700 text-sm leading-relaxed">Caracterización molecular de materiales mediante dispersión Raman.</p>
+      </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+      <img src="img/7.jpg" alt="Viscosímetro Automático" class="w-full h-56 object-cover">
+      <div class="p-4">
+        <h3 class="font-bold text-xl text-blue-800 mb-2">Viscosímetro Automático</h3>
+        <p class="text-gray-700 text-sm leading-relaxed">Medición automatizada de viscosidad en fluidos para investigación.</p>
+      </div>
+    </div>
+
+    <!-- 8 -->
+    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+      <img src="img/8.jpg" alt="Microscopio Confocal" class="w-full h-56 object-cover">
+      <div class="p-4">
+        <h3 class="font-bold text-xl text-blue-800 mb-2">Microscopio Confocal</h3>
+        <p class="text-gray-700 text-sm leading-relaxed">Visualización 3D de muestras biológicas con alta resolución.</p>
+      </div>
+    </div>
+
+    <!-- 9 -->
+    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+      <img src="img/9.jpg" alt="Banco de Ensayo Hidráulico" class="w-full h-56 object-cover">
+      <div class="p-4">
+        <h3 class="font-bold text-xl text-blue-800 mb-2">Banco de Ensayo Hidráulico</h3>
+        <p class="text-gray-700 text-sm leading-relaxed">Plataforma para pruebas de flujo y presión en estructuras hidráulicas.</p>
+      </div>
+    </div>
+
+    <!-- 10 -->
+    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+      <img src="img/10.jpg" alt="Servidor de Cálculo HPC" class="w-full h-56 object-cover">
+      <div class="p-4">
+        <h3 class="font-bold text-xl text-blue-800 mb-2">Servidor de Cálculo HPC</h3>
+        <p class="text-gray-700 text-sm leading-relaxed">Infraestructura de cómputo para simulaciones científicas a gran escala.</p>
+      </div>
+    </div>
+
+    <!-- 11 -->
+    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+      <img src="img/11.jpg" alt="Impresora 3D Industrial" class="w-full h-56 object-cover">
+      <div class="p-4">
+        <h3 class="font-bold text-xl text-blue-800 mb-2">Impresora 3D Industrial</h3>
+        <p class="text-gray-700 text-sm leading-relaxed">Fabricación aditiva de prototipos y componentes para investigación aplicada.</p>
+      </div>
+    </div>
+
+    <!-- 12 -->
+    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+      <img src="img/12.jpg" alt="Espectrofotómetro UV-Vis" class="w-full h-56 object-cover">
+      <div class="p-4">
+        <h3 class="font-bold text-xl text-blue-800 mb-2">Espectrofotómetro UV-Vis</h3>
+        <p class="text-gray-700 text-sm leading-relaxed">Análisis óptico de muestras líquidas mediante absorción ultravioleta y visible.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGINADOR -->
+  <div class="flex justify-center mt-8 space-x-4">
+    <button id="prev" class="px-4 py-2 bg-gray-300 text-gray-700 rounded hover:bg-gray-400">Anterior</button>
+    <button id="next" class="px-4 py-2 bg-gray-300 text-gray-700 rounded hover:bg-gray-400">Siguiente</button>
+  </div>
+</section>
+
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-200 py-8 mt-16">
+    <div class="container mx-auto text-center">
+      <p>© 2025 Red de Laboratorios UTEM — Universidad Tecnológica Metropolitana</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPT PAGINADOR -->
+  <script>
+    const container = document.getElementById('equipos-container');
+    const items = Array.from(container.children);
+    const itemsPerPage = 4;
+    let currentPage = 1;
+    const totalPages = Math.ceil(items.length / itemsPerPage);
+
+    function showPage(page) {
+      const start = (page - 1) * itemsPerPage;
+      const end = start + itemsPerPage;
+      items.forEach((item, index) => {
+        item.style.display = index >= start && index < end ? 'block' : 'none';
+      });
+    }
+
+    document.getElementById('prev').addEventListener('click', () => {
+      if (currentPage > 1) {
+        currentPage--;
+        showPage(currentPage);
+      }
+    });
+
+    document.getElementById('next').addEventListener('click', () => {
+      if (currentPage < totalPages) {
+        currentPage++;
+        showPage(currentPage);
+      }
+    });
+
+    // Mostrar la primera página al cargar
+    showPage(currentPage);
+  </script>
+
+</body>
+</html>

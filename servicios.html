@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solicitar Servicios | Red de Laboratorios UTEM</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+
+<!-- header.html -->
+<header class="bg-white shadow-lg border-b border-gray-200">
+  <div class="container mx-auto flex justify-between items-center p-4">
+    <div class="flex items-center">
+      <img src="https://www.utem.cl/wp-content/themes/UTEM050925/images/01_img_cor/00_id_corp/ig_utem.svg" alt="UTEM LAB" class="h-12">
+      <span class="ml-3 font-bold text-xl text-blue-800 tracking-wide">UTEM LAB</span>
+    </div>
+    <nav class="flex items-center space-x-6">
+      <a href="index.html" class="text-gray-700 hover:text-blue-700 transition">Inicio</a>
+      <a href="nosotros.html" class="text-gray-700 hover:text-blue-700 transition">Nosotros</a>
+      <a href="equipamiento.html" class="text-gray-700 hover:text-blue-700 transition">Equipamiento</a>
+      <a href="laboratorios.html" class="text-gray-700 hover:text-blue-700 transition">Laboratorios</a>
+      <a href="contacto.html" class="text-gray-700 hover:text-blue-700 transition">Contacto</a>
+      <a href="servicios.html" class="bg-gradient-to-r from-blue-700 to-cyan-600 text-white px-4 py-2 rounded shadow-md hover:shadow-lg transition">Solicitar Servicio</a>
+    </nav>
+  </div>
+</header>
+
+
+  <!-- HERO / TÍTULO -->
+  <section class="bg-gradient-to-r from-blue-600 to-cyan-500 text-white py-20">
+    <div class="container mx-auto text-center px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 tracking-tight">Solicitar Servicios</h1>
+      <p class="text-lg opacity-90 max-w-2xl mx-auto">
+        Completa el formulario para solicitar servicios especializados de la Red de Laboratorios de la UTEM.
+      </p>
+    </div>
+  </section>
+
+  <!-- INFORMACIÓN DE SERVICIOS -->
+  <section class="container mx-auto py-12 px-6">
+    <div class="max-w-4xl mx-auto space-y-6">
+      <h2 class="text-2xl font-bold text-blue-800">Servicios de la Red de Laboratorios UTEM</h2>
+      <p class="text-gray-700">
+        La red de laboratorios de la UTEM ofrece servicios especializados para apoyar la investigación, desarrollo tecnológico e innovación. Contamos con equipos de última generación y personal calificado para análisis, pruebas, mediciones y asesorías técnicas.
+      </p>
+
+      <h3 class="text-xl font-semibold text-blue-800">Público Objetivo</h3>
+      <ul class="list-disc pl-6 text-gray-700">
+        <li>Investigadores y académicos de la UTEM</li>
+        <li>Estudiantes de pregrado y posgrado</li>
+        <li>Empresas y organizaciones del sector público y privado</li>
+        <li>Emprendedores y startups</li>
+        <li>Cualquier persona o entidad que requiera servicios especializados de laboratorio</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FORMULARIO DE SOLICITUD -->
+  <section class="container mx-auto py-12 px-6">
+    <div class="max-w-3xl mx-auto bg-white shadow-lg rounded-lg p-8">
+      <h3 class="text-2xl font-bold text-blue-800 mb-6">Formulario de Solicitud</h3>
+      <form class="space-y-6">
+        <!-- Nombre -->
+        <div>
+          <label for="nombre" class="block font-semibold text-gray-800 mb-1">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" class="w-full border border-gray-300 rounded px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none">
+        </div>
+
+        <!-- Correo -->
+        <div>
+          <label for="correo" class="block font-semibold text-gray-800 mb-1">Correo Electrónico</label>
+          <input type="email" id="correo" name="correo" placeholder="Ingrese su correo electrónico" class="w-full border border-gray-300 rounded px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none">
+        </div>
+
+        <!-- Teléfono -->
+        <div>
+          <label for="telefono" class="block font-semibold text-gray-800 mb-1">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su teléfono" class="w-full border border-gray-300 rounded px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none">
+        </div>
+
+        <!-- Tipo de Solicitud -->
+        <div>
+          <label for="tipo" class="block font-semibold text-gray-800 mb-1">Tipo de Solicitud</label>
+          <select id="tipo" name="tipo" class="w-full border border-gray-300 rounded px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none">
+            <option value="">Seleccione un tipo de solicitud</option>
+            <option value="analisis">Análisis de muestras</option>
+            <option value="mediciones">Pruebas y mediciones</option>
+            <option value="asesoria">Asesoría técnica</option>
+            <option value="otros">Otros servicios</option>
+          </select>
+        </div>
+
+        <!-- Descripción -->
+        <div>
+          <label for="descripcion" class="block font-semibold text-gray-800 mb-1">Descripción de la Solicitud</label>
+          <textarea id="descripcion" name="descripcion" placeholder="Describa su solicitud" rows="5" class="w-full border border-gray-300 rounded px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none"></textarea>
+        </div>
+
+        <!-- Botón -->
+        <div class="text-center">
+          <button type="submit" class="bg-gradient-to-r from-blue-700 to-cyan-600 text-white font-semibold px-6 py-3 rounded shadow-md hover:shadow-lg transition">
+            Enviar Solicitud
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-200 py-8 mt-16">
+    <div class="container mx-auto text-center">
+      <p>© 2025 Red de Laboratorios UTEM — Universidad Tecnológica Metropolitana</p>
+    </div>
+  </footer>
+
+</body>
+</html>

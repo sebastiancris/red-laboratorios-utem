@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laboratorios | Red de Laboratorios UTEM</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .tab-active {
+      background: linear-gradient(to right, #1e40af, #06b6d4);
+      color: white !important;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+
+<!-- HEADER -->
+<header class="bg-white shadow-lg border-b border-gray-200">
+  <div class="container mx-auto flex justify-between items-center p-4">
+    <div class="flex items-center">
+      <a href="index.html" class="flex items-center">
+        <img src="https://www.utem.cl/wp-content/themes/UTEM050925/images/01_img_cor/00_id_corp/ig_utem.svg" alt="UTEM LAB" class="h-12">
+        <span class="ml-3 font-bold text-xl text-blue-800 tracking-wide">UTEM LAB</span>
+      </a>
+    </div>
+
+    <nav class="flex items-center space-x-6">
+      <a href="index.html" class="text-gray-700 hover:text-blue-700 transition">Inicio</a>
+      <a href="nosotros.html" class="text-gray-700 hover:text-blue-700 transition">Nosotros</a>
+      <a href="equipamiento.html" class="text-gray-700 hover:text-blue-700 transition">Equipamiento</a>
+      <a href="laboratorios.html" class="text-blue-700 font-semibold transition">Laboratorios</a>
+      <a href="contacto.html" class="text-gray-700 hover:text-blue-700 transition">Contacto</a>
+      <a href="servicios.html" class="bg-gradient-to-r from-blue-700 to-cyan-600 text-white px-4 py-2 rounded shadow-md hover:shadow-lg transition">Solicitar Servicio</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="bg-gradient-to-r from-blue-600 to-cyan-500 text-white py-20">
+  <div class="container mx-auto text-center px-4">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4 tracking-tight">Laboratorios</h1>
+    <p class="text-lg opacity-90 max-w-2xl mx-auto">
+      Descubre los laboratorios especializados de la UTEM, organizados por facultades y áreas transversales para potenciar la investigación y la innovación.
+    </p>
+  </div>
+</section>
+
+<!-- TABS -->
+<section class="container mx-auto py-12 px-6 text-center">
+  <div class="flex flex-wrap justify-center items-center gap-4 md:gap-6 mb-12">
+    <button class="tab-btn tab-active px-6 py-3 rounded-lg border border-blue-700 text-blue-700 font-semibold transition min-w-[280px]">Facultad de Ciencias de la Construcción y Ordenamiento Territorial</button>
+    <button class="tab-btn px-6 py-3 rounded-lg border border-blue-700 text-blue-700 font-semibold transition hover:bg-blue-50 min-w-[280px]">Facultad de Ingeniería</button>
+    <button class="tab-btn px-6 py-3 rounded-lg border border-blue-700 text-blue-700 font-semibold transition hover:bg-blue-50 min-w-[280px]">Facultad de Humanidades y Tecnología de la Comunicación Social</button>
+    <button class="tab-btn px-6 py-3 rounded-lg border border-blue-700 text-blue-700 font-semibold transition hover:bg-blue-50 min-w-[280px]">Laboratorios Transversales</button>
+  </div>
+
+  <!-- CONTENIDO DE LABORATORIOS -->
+  <div id="lab-content" class="space-y-12 max-w-5xl mx-auto text-left">
+
+    <!-- LAB 1 -->
+    <div class="bg-white rounded-lg shadow-md flex flex-col md:flex-row overflow-hidden hover:shadow-xl transition">
+      <img src="img/lab_1.avif" alt="Laboratorio de Materiales" class="md:w-1/3 h-64 object-cover">
+      <div class="p-6 flex flex-col justify-center">
+        <h3 class="text-2xl font-bold text-blue-800 mb-2">Laboratorio de Materiales de Construcción</h3>
+        <p class="text-gray-700 leading-relaxed">
+          Espacio dedicado al análisis de resistencia, durabilidad y comportamiento estructural de materiales de construcción. 
+          Se realizan ensayos normalizados para hormigones, cementos, áridos y acero estructural.
+        </p>
+      </div>
+    </div>
+
+    <!-- LAB 2 -->
+    <div class="bg-white rounded-lg shadow-md flex flex-col md:flex-row overflow-hidden hover:shadow-xl transition">
+      <img src="img/lab_2.avif" alt="Laboratorio de Topografía" class="md:w-1/3 h-64 object-cover">
+      <div class="p-6 flex flex-col justify-center">
+        <h3 class="text-2xl font-bold text-blue-800 mb-2">Laboratorio de Topografía y Geomática</h3>
+        <p class="text-gray-700 leading-relaxed">
+          Equipado con estaciones totales, GPS y software de modelado 3D, este laboratorio permite realizar levantamientos, 
+          análisis y modelaciones del territorio para proyectos de ingeniería civil y planificación urbana.
+        </p>
+      </div>
+    </div>
+
+    <!-- LAB 3 -->
+    <div class="bg-white rounded-lg shadow-md flex flex-col md:flex-row overflow-hidden hover:shadow-xl transition">
+      <img src="img/lab_3.avif" alt="Laboratorio de Energía" class="md:w-1/3 h-64 object-cover">
+      <div class="p-6 flex flex-col justify-center">
+        <h3 class="text-2xl font-bold text-blue-800 mb-2">Laboratorio de Energía y Eficiencia Constructiva</h3>
+        <p class="text-gray-700 leading-relaxed">
+          Desarrolla estudios térmicos y de consumo energético en edificaciones, evaluando materiales y soluciones constructivas 
+          sostenibles para mejorar la eficiencia energética en el entorno urbano.
+        </p>
+      </div>
+    </div>
+
+    <!-- LAB 4 -->
+    <div class="bg-white rounded-lg shadow-md flex flex-col md:flex-row overflow-hidden hover:shadow-xl transition">
+      <img src="img/lab_4.avif" alt="Laboratorio de Hidráulica y Fluidos" class="md:w-1/3 h-64 object-cover">
+      <div class="p-6 flex flex-col justify-center">
+        <h3 class="text-2xl font-bold text-blue-800 mb-2">Laboratorio de Hidráulica y Fluidos</h3>
+        <p class="text-gray-700 leading-relaxed">
+          En este espacio se estudian fenómenos de flujo y presión en sistemas hidráulicos, aplicados a obras civiles, 
+          sistemas sanitarios y energías renovables. Cuenta con canales de ensayo y bombas de última generación.
+        </p>
+      </div>
+    </div>
+
+    <!-- LAB 5 -->
+    <div class="bg-white rounded-lg shadow-md flex flex-col md:flex-row overflow-hidden hover:shadow-xl transition">
+      <img src="img/lab_5.avif" alt="Laboratorio de Geotecnia" class="md:w-1/3 h-64 object-cover">
+      <div class="p-6 flex flex-col justify-center">
+        <h3 class="text-2xl font-bold text-blue-800 mb-2">Laboratorio de Geotecnia</h3>
+        <p class="text-gray-700 leading-relaxed">
+          Se especializa en ensayos de suelos, caracterización mecánica y estabilidad de terrenos, 
+          fundamentales para proyectos de infraestructura y fundaciones seguras.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-gray-200 py-8 mt-16">
+  <div class="container mx-auto text-center">
+    <p>© 2025 Red de Laboratorios UTEM — Universidad Tecnológica Metropolitana</p>
+  </div>
+</footer>
+
+<!-- SCRIPT -->
+<script>
+  const tabs = document.querySelectorAll('.tab-btn');
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('tab-active'));
+      tab.classList.add('tab-active');
+    });
+  });
+</script>
+
+</body>
+</html>
