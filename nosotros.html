@@ -8,24 +8,43 @@
 </head>
 <body class="bg-gray-50 font-sans text-gray-800">
 
-<!-- header.html -->
+<!-- HEADER PRINCIPAL -->
 <header class="bg-white shadow-lg border-b border-gray-200">
   <div class="container mx-auto flex justify-between items-center p-4">
     <div class="flex items-center">
-      <img src="https://www.utem.cl/wp-content/themes/UTEM050925/images/01_img_cor/00_id_corp/ig_utem.svg" alt="UTEM LAB" class="h-12">
-      <span class="ml-3 font-bold text-xl text-blue-800 tracking-wide">UTEM LAB</span>
+      <a href="index.html" class="flex items-center">
+        <img src="https://www.utem.cl/wp-content/themes/UTEM050925/images/01_img_cor/00_id_corp/ig_utem.svg" alt="UTEM LAB" class="h-12">
+        <span class="ml-3 font-bold text-xl text-blue-800 tracking-wide">UTEM LAB</span>
+      </a>
     </div>
+
+    <!-- MENÚ PRINCIPAL -->
     <nav class="flex items-center space-x-6">
       <a href="index.html" class="text-gray-700 hover:text-blue-700 transition">Inicio</a>
-      <a href=".html" class="text-blue-700 font-semibold transition">Nosotros</a>
+      <a href="nosotros.html" class="text-blue-700 font-semibold transition">Nosotros</a>
       <a href="equipamiento.html" class="text-gray-700 hover:text-blue-700 transition">Equipamiento</a>
       <a href="laboratorios.html" class="text-gray-700 hover:text-blue-700 transition">Laboratorios</a>
       <a href="contacto.html" class="text-gray-700 hover:text-blue-700 transition">Contacto</a>
+
+      <!-- MENÚ DESPLEGABLE "OTROS" -->
+      <div class="relative group">
+        <button class="text-gray-700 hover:text-blue-700 transition flex items-center">
+          Otros
+          <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+               <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div class="absolute hidden group-hover:block bg-white shadow-lg border rounded-md mt-2 w-56">
+          <a href="indicadores.html" class="block px-4 py-2 hover:bg-blue-50 text-gray-700">Indicadores</a>
+          <a href="reservar.html" class="block px-4 py-2 hover:bg-blue-50 text-gray-700">Reservar hora Laboratorio y Equipamiento</a>
+        </div>
+      </div>
+
       <a href="servicios.html" class="bg-gradient-to-r from-blue-700 to-cyan-600 text-white px-4 py-2 rounded shadow-md hover:shadow-lg transition">Solicitar Servicio</a>
     </nav>
   </div>
 </header>
-
   <!-- HERO -->
   <section class="bg-gradient-to-r from-blue-600 to-cyan-500 text-white py-20">
     <div class="container mx-auto text-center">

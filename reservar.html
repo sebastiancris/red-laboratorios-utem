@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservar | Red de Laboratorios UTEM</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 font-sans text-gray-800">
+
+<!-- HEADER PRINCIPAL -->
+<header class="bg-white shadow-lg border-b border-gray-200">
+  <div class="container mx-auto flex justify-between items-center p-4">
+    <div class="flex items-center">
+      <a href="index.html" class="flex items-center">
+        <img src="https://www.utem.cl/wp-content/themes/UTEM050925/images/01_img_cor/00_id_corp/ig_utem.svg" alt="UTEM LAB" class="h-12">
+        <span class="ml-3 font-bold text-xl text-blue-800 tracking-wide">UTEM LAB</span>
+      </a>
+    </div>
+
+    <!-- MENÚ PRINCIPAL -->
+    <nav class="flex items-center space-x-6">
+      <a href="index.html" class="text-gray-700 hover:text-blue-700 transition">Inicio</a>
+      <a href="nosotros.html" class="text-gray-700 hover:text-blue-700 transition">Nosotros</a>
+      <a href="equipamiento.html" class="text-gray-700 hover:text-blue-700 transition">Equipamiento</a>
+      <a href="laboratorios.html" class="text-gray-700 hover:text-blue-700 transition">Laboratorios</a>
+      <a href="contacto.html" class="text-gray-700 hover:text-blue-700 transition">Contacto</a>
+
+      <!-- MENÚ DESPLEGABLE "OTROS" -->
+      <div class="relative group">
+        <button class="text-gray-700 hover:text-blue-700 transition flex items-center">
+          Otros
+          <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+               <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div class="absolute hidden group-hover:block bg-white shadow-lg border rounded-md mt-2 w-56">
+          <a href="indicadores.html" class="block px-4 py-2 hover:bg-blue-50 text-gray-700">Indicadores</a>
+          <a href="reservar.html" class="block px-4 py-2 text-blue-700 font-semibold transition">Reservar hora Laboratorio y Equipamiento</a>
+        </div>
+      </div>
+
+      <a href="servicios.html" class="bg-gradient-to-r from-blue-700 to-cyan-600 text-white px-4 py-2 rounded shadow-md hover:shadow-lg transition">Solicitar Servicio</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="bg-gradient-to-r from-blue-600 to-cyan-500 text-white py-20">
+  <div class="container mx-auto text-center px-4">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4 tracking-tight">Reservar Laboratorio o Equipamiento</h1>
+    <p class="text-lg opacity-90 max-w-2xl mx-auto">
+      Gestiona tu reserva de forma rápida y organizada. Selecciona tu tipo de usuario, ingresa los datos y elige una fecha disponible.
+    </p>
+  </div>
+</section>
+
+<!-- FORMULARIO DE RESERVA -->
+<section class="container mx-auto py-16 px-6">
+  <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-2xl p-8 space-y-8">
+
+    <h2 class="text-2xl font-bold text-blue-800 text-center mb-8">Formulario de Reserva</h2>
+
+    <!-- Tipo de usuario -->
+    <div>
+      <label class="block text-gray-700 font-semibold mb-2">Tipo de usuario</label>
+      <select class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 outline-none transition">
+        <option>Selecciona tipo de usuario</option>
+        <option>Estudiante UTEM</option>
+        <option>Académico / Investigador</option>
+        <option>Funcionario UTEM</option>
+        <option>Externo / Empresa</option>
+      </select>
+    </div>
+
+    <!-- Nombre del solicitante -->
+    <div>
+      <label class="block text-gray-700 font-semibold mb-2">Nombre del solicitante</label>
+      <input type="text" placeholder="Ej: Juan Pérez" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 outline-none">
+    </div>
+
+    <!-- Propietarios de la reserva -->
+    <div>
+      <label class="block text-gray-700 font-semibold mb-2">Propietarios de la reserva</label>
+      <input type="text" placeholder="Ej: Laboratorio de Electroquímica, Grupo Materiales" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 outline-none">
+    </div>
+
+    <!-- CALENDARIO -->
+    <div>
+      <label class="block text-gray-700 font-semibold mb-4">Seleccionar fecha y horario</label>
+
+      <div class="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl shadow-inner p-6">
+        <!-- Calendario simulado -->
+        <div class="grid grid-cols-7 gap-2 text-center mb-4 font-semibold text-gray-600">
+          <span>Lun</span><span>Mar</span><span>Mié</span><span>Jue</span><span>Vie</span><span>Sáb</span><span>Dom</span>
+        </div>
+
+        <div class="grid grid-cols-7 gap-2 text-center">
+          <!-- Ejemplo calendario -->
+          <button class="bg-white rounded-lg py-2 hover:bg-blue-100 shadow-sm transition">3</button>
+          <button class="bg-white rounded-lg py-2 hover:bg-blue-100 shadow-sm transition">4</button>
+          <button class="bg-blue-600 text-white rounded-lg py-2 shadow-lg">5</button>
+          <button class="bg-white rounded-lg py-2 hover:bg-blue-100 shadow-sm transition">6</button>
+          <button class="bg-white rounded-lg py-2 hover:bg-blue-100 shadow-sm transition">7</button>
+          <button class="bg-white rounded-lg py-2 hover:bg-blue-100 shadow-sm transition">8</button>
+          <button class="bg-white rounded-lg py-2 hover:bg-blue-100 shadow-sm transition">9</button>
+        </div>
+
+        <!-- Horarios disponibles -->
+        <div class="mt-6">
+          <p class="text-gray-700 font-medium mb-3">Horarios disponibles:</p>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+            <button class="bg-white text-gray-700 py-2 rounded-lg shadow hover:bg-blue-100 transition">09:00 - 11:00</button>
+            <button class="bg-white text-gray-700 py-2 rounded-lg shadow hover:bg-blue-100 transition">11:00 - 13:00</button>
+            <button class="bg-white text-gray-700 py-2 rounded-lg shadow hover:bg-blue-100 transition">14:00 - 16:00</button>
+            <button class="bg-white text-gray-700 py-2 rounded-lg shadow hover:bg-blue-100 transition">16:00 - 18:00</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTÓN ENVIAR -->
+    <div class="text-center pt-6">
+      <button class="bg-gradient-to-r from-blue-700 to-cyan-600 text-white px-6 py-3 rounded-lg font-semibold shadow-md hover:shadow-xl transition-all duration-200">
+        Enviar Solicitud de Reserva
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-gray-200 py-8 mt-16">
+  <div class="container mx-auto text-center">
+    <p>© 2025 Red de Laboratorios UTEM — Universidad Tecnológica Metropolitana</p>
+  </div>
+</footer>
+
+</body>
+</html>
