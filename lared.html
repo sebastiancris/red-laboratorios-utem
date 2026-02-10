@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red de Laboratorios UTEM</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 font-sans text-gray-800">
+
+<!-- ================= HEADER PRINCIPAL ================= -->
+<header class="bg-white border-b shadow-lg relative z-50">
+  <div class="mx-auto max-w-6xl px-6 sm:px-8 lg:px-16 py-4 flex justify-between items-center">
+
+    <!-- Logo -->
+    <a href="index.html">
+      <img src="logo-red-lab-utem.png" alt="UTEM LAB" class="h-12">
+    </a>
+
+    <!-- Botón hamburguesa -->
+    <button id="menuBtn"
+      class="md:hidden text-[#0853f9] text-2xl focus:outline-none"
+      aria-label="Abrir menú">
+      ☰
+    </button>
+
+    <!-- Menú desktop -->
+    <nav class="hidden md:flex items-center space-x-6 text-[#0039cc] font-medium">
+      <a href="https://investigacion.utem.cl/" target="_blank" class="hover:underline underline-offset-4">Investigación</a>
+      <span class="opacity-50">|</span>
+      <a href="https://www.utem.cl/"  target="_blank" class="hover:underline underline-offset-4">UTEM</a>
+      <a href="solicitar_servicios.html"
+        class="ml-4 bg-gradient-to-r from-[#AFCC46] to-[#64c2c8]
+               px-6 py-1 rounded-full shadow-md font-semibold hover:shadow-lg transition">
+        SOLICITAR SERVICIO
+      </a>
+    </nav>
+
+  </div>
+
+  <!-- Menú mobile -->
+  <div id="mobileMenu" class="hidden md:hidden border-t bg-white">
+    <nav class="flex flex-col px-6 py-6 space-y-5 text-[#0039cc]">
+
+      <a href="https://investigacion.utem.cl/" target="_blank" class="font-semibold">Investigación</a>
+      <a href="https://www.utem.cl/" target="_blank" class="font-semibold">UTEM</a>
+
+      <hr>
+
+      <!-- Menú secundario integrado -->
+      <a href="lared.html" class="text-sm opacity-80">La Red</a>
+      <a href="equipamiento.html" class="text-sm opacity-80">Equipamiento</a>
+      <a href="laboratorios.html" class="text-sm opacity-80">Laboratorios</a>
+      <a href="contacto.html" class="text-sm opacity-80">Contacto</a>
+
+      <a href="servicios.html"
+        class="mt-4 bg-gradient-to-r from-[#AFCC46] to-[#64c2c8]
+               px-4 py-1 rounded-full text-center font-semibold">
+        SOLICITAR SERVICIO
+      </a>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= SEGUNDO MENÚ ================= -->
+<nav class="hidden md:block bg-[#0039cc] text-white">
+  <div class="mx-auto max-w-6xl px-6 sm:px-8 lg:px-16">
+    <ul class="flex justify-end items-center h-12 space-x-6 text-sm font-medium">
+      <li><a href="lared.html" class="hover:underline">La Red</a></li>
+      <li class="opacity-40">|</li>
+      <li><a href="equipamiento.html" class="hover:underline">Equipamiento</a></li>
+      <li class="opacity-40">|</li>
+      <li><a href="laboratorios.html" class="hover:underline">Laboratorios</a></li>
+      <li class="opacity-40">|</li>
+      <li><a href="contacto.html" class="hover:underline">Contacto</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section class="relative w-full">
+  <!-- Imagen en tamaño real, responsive -->
+  <img src="img/banner-red.jpg" class="w-full h-auto max-h-[600px] object-cover">
+
+  <!-- Capa de texto con fondo semi-transparente -->
+  <div class="absolute inset-0 bg-black/40 flex flex-col justify-center items-start text-left px-12 sm:px-16 lg:px-32">
+    <h3 class="text-4xl md:text-5xl text-white/90 mb-4 translate-x-4 md:translate-x-8">
+      La Red
+    </h3>
+  </div>
+</section>
+
+<section class="max-w-4xl mx-auto px-6 py-16 space-y-12">
+
+  <!-- Título azul centrado y más pequeño -->
+  <div class="text-center">
+    <h2 class="text-lg md:text-xl font-bold text-[#0039cc] leading-snug">
+      Una iniciativa institucional que articula capacidades científicas,<br>
+      tecnológicas y humanas para potenciar la investigación con impacto.
+    </h2>
+  </div>
+
+  <!-- Bloques de textos: uno a la izquierda y otro a la derecha -->
+  <div class="flex flex-col md:flex-row md:justify-between gap-10">
+
+    <!-- Bloque izquierda -->
+    <div class="md:w-1/2 text-left text-gray-800 leading-relaxed">
+      La red de laboratorios de investigación de la Universidad Tecnológica Metropolitana (UTEM) 
+      es una iniciativa estratégica orientada a fortalecer la generación de conocimiento y desarrollo 
+      tecnológico mediante la colaboración interdisciplinaria, la optimización de los recursos 
+      y la articulación de capacidades científicas, tecnológicas y de infraestructura.
+    </div>
+
+    <!-- Bloque derecha -->
+    <div class="md:w-1/2 text-left text-gray-800 leading-relaxed">
+      Con un enfoque basado en la articulación, las tecnologías, el conocimiento y la comunidad, esta 
+      red se establece como un pilar institucional para el desarrollo de la investigación e innovación 
+      con un impacto y sentido público.
+    </div>
+
+  </div>
+</section>
+
+<section class="relative w-full bg-cover bg-center" style="background-image: url('img/banner-mv.jpg');">
+
+  <!-- Overlay semitransparente para que el texto resalte -->
+  <div class="absolute inset-0 bg-black/40"></div>
+
+  <!-- Contenedor de contenido centrado con padding y márgenes -->
+  <div class="relative max-w-4xl mx-auto px-6 py-16 space-y-12">
+
+    <!-- Bloques de textos: izquierda y derecha en desktop -->
+    <div class="flex flex-col md:flex-row md:justify-between gap-10">
+
+      <!-- Bloque izquierda: Misión -->
+      <div class="md:w-1/2 text-left text-white leading-relaxed">
+        <p class="font-bold mb-2">Misión</p>
+        <p>
+          Fortalecer el desarrollo científico-tecnológico de la UTEM mediante la articulación 
+          de sus laboratorios de investigación, la colaboración interdisciplinaria y el uso eficiente 
+          de los recursos institucionales. Promovemos la generación de conocimiento, la vinculación 
+          con el entorno y la innovación con impacto social y compromiso público.
+        </p>
+      </div>
+
+      <!-- Bloque derecha: Visión -->
+      <div class="md:w-1/2 text-left text-white leading-relaxed">
+        <p class="font-bold mb-2">Visión</p>
+        <p>
+          Consolidarse como una red de referencia nacional en la gestión colaborativa de laboratorios 
+          universitarios, reconocida por su capacidad de articular conocimiento, infraestructura científica 
+          e investigación interdisciplinaria de excelencia, al servicio del desarrollo del país y de su 
+          vínculo activo con la sociedad.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="max-w-6xl mx-auto px-6 py-16">
+
+  <!-- Título centrado -->
+  <h2 class="text-3xl md:text-4xl font-bold text-center text-[#0039cc] mb-12">
+    VALORES CORPORATIVOS
+  </h2>
+
+  <!-- Imágenes con textos debajo -->
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center items-start">
+
+    <!-- Valor 1 -->
+    <div class="flex flex-col items-center text-center">
+      <img src="img/ico-val-1.png" alt="Colaboración Interdisciplinaria" class="h-24 w-24 mb-4">
+      <p class="font-semibold text-[#0039cc]">Colaboración<br>interdisiplicinaria</p>
+      <p class="text-center text-gray-800 mt-4">Fomentamos el trabajo en red entre diversas disciplinas como base para la construcción colectiva del conocimiento. Valoramos el diálogo entre saberes como una vía para generar soluciones innovadoras y pertinentes a los desafíos actuales.</p>
+    </div>
+
+    <!-- Valor 2 -->
+    <div class="flex flex-col items-center text-center">
+      <img src="img/ico-val-2.png" alt="Compromiso Público" class="h-24 w-24 mb-4">
+      <p class="font-semibold text-[#0039cc]">Compromiso<br>Público</p>
+      <p class="text-center text-gray-800 mt-4">Entendemos la investigación como un bien común. Actuamos con responsabilidad social y vocación transformadora, contribuyendo desde la UTEM al desarrollo del país y al bienestar de sus comunidades.</p>
+    </div>
+
+    <!-- Valor 3 -->
+    <div class="flex flex-col items-center text-center">
+      <img src="img/ico-val-3.png" alt="Gestión Articulada y Transparente" class="h-24 w-24 mb-4">
+      <p class="font-semibold text-[#0039cc]">Gestión articulada<br>y transparente</p>
+      <p class="text-center text-gray-800 mt-4">Impulsamos una administración eficiente y coordinada de la red de laboratorios. Promovemos la articulación interna y externa para optimizar procesos, evitar duplicidades y maximizar el impacto de la infraestructura y la producción científica.</p>
+    </div>
+
+    <!-- Valor 4 -->
+    <div class="flex flex-col items-center text-center">
+      <img src="img/ico-val-4.png" alt="Innovación Científica Tecnológica" class="h-24 w-24 mb-4">
+      <p class="font-semibold text-[#0039cc]">Innovación <br>Científica Tecnológica</p>
+      <p class="text-center text-gray-800 mt-4">Promovemos una cultura de innovación basada en el potencial creativo, científico y tecnológico de nuestros laboratorios, orientada a generar soluciones aplicadas que mejoren la calidad de vida y resuelvan desafíos de la industria y la sociedad.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="max-w-full mx-auto px-6 py-16 bg-[#f3f8f7]">
+
+  <!-- Título centrado -->
+  <h2 class="text-3xl md:text-4xl font-bold text-center text-[hsl(184,47%,59%)] mb-12 uppercase">
+    EJES ESTRATÉGICOS
+  </h2>
+
+  <!-- Imágenes con textos debajo -->
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center items-stretch">
+
+    <!-- Eje 1 -->
+    <div class="flex flex-col items-center text-center bg-white p-6 shadow-lg rounded-lg w-full max-w-[220px] h-full">
+      <img src="img/ico-ejes-art.png" alt="Articulación" class="h-24 w-24 mb-4">
+      <p class="font-semibold text-[hsl(74,56,54)]">Articulación</p>
+      <p class="text-left text-gray-800 mt-4 mx-auto">Promovemos la conexión estratégica entre laboratorios, investigadores y líneas de investigación, fomentando el trabajo colaborativo, el uso eficiente de recursos y la integración con redes académicas y tecnologías, tanto nacionales e internacionales.</p>
+    </div>
+
+    <!-- Eje 2 -->
+    <div class="flex flex-col items-center text-center bg-white p-6 shadow-lg rounded-lg w-full max-w-[220px] h-full">
+      <img src="img/ico-ejes-tec.png" alt="Tecnología" class="h-24 w-24 mb-4">
+      <p class="font-semibold text-[hsl(74,56,54)]">Tecnología</p>
+      <p class="text-left text-gray-800 mt-4 mx-auto">Representamos la infraestructura científica y tecnológica como un recurso compartido y habilitante para el desarrollo del conocimiento. El equipamiento, las herramientas y los entornos constituyen un soporte clave para el desarrollo científico-tecnológico y la innovación al interior de la Universidad.</p>
+    </div>
+
+    <!-- Eje 3 -->
+    <div class="flex flex-col items-center text-center bg-white p-6 shadow-lg rounded-lg w-full max-w-[220px] h-full">
+      <img src="img/ico-ejes-con.png" alt="Conocimiento" class="h-24 w-24 mb-4">
+      <p class="font-semibold text-[hsl(74,56,54)]">Conocimiento</p>
+      <p class="text-left text-gray-800 mt-4 mx-auto">Impulsamos el desarrollo de saberes desde una perspectiva interdisciplinaria, integrando ciencia, tecnología, conocimiento e innovación (CTC). Valoramos la diversidad de disciplinas como motor de transformación y solución a problemas complejos.</p>
+    </div>
+
+    <!-- Eje 4 -->
+    <div class="flex flex-col items-center text-center bg-white p-6 shadow-lg rounded-lg w-full max-w-[220px] h-full">
+      <img src="img/ico-ejes-com.png" alt="Comunidad" class="h-24 w-24 mb-4">
+      <p class="font-semibold text-[hsl(74,56,54)]">Comunidad</p>
+      <p class="text-left text-gray-800 mt-4 mx-auto">Reconocemos a las personas como el centro de quehacer de la investigación y el desarrollo. La red está conformada por equipos humanos diversos y comprometidos, que colaboran desde el aprendizaje mutuo y el sentido de pertenencia. A su vez, nos proyectamos hacia la sociedad fortaleciendo el compromiso público de la UTEM.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="max-w-full mx-auto px-8 py-16 bg-white">
+
+  <!-- Título centrado -->
+  <h2 class="text-3xl md:text-4xl font-bold text-center text-[#0039cc] mb-12 uppercase">
+    EQUIPO
+  </h2>
+
+  <!-- Primera imagen centrada -->
+  <div class="flex flex-col items-center text-center mb-12">
+    <img src="img/equipo/equipo-1.png" alt="René Ruby" class="h-32 w-32 rounded-full mb-4">
+    <p class="font-semibold mb-4 text-[#0039cc]">René Ruby <br>Figueroa</p>
+    <p class="text-gray-800 text-sm">Director de investigación y <br>transferencia tecnológica UTEM</p>
+    <p class="font-semibold text-[#0039cc] text-sm">dir.investigacion@utem.cl</p>
+  </div>
+
+  <!-- Cuatro imágenes alineadas -->
+  <div class="grid grid-cols-2 sm:grid-cols-4 gap-8 justify-items-center">
+
+    <!-- Miembro 1 -->
+    <div class="flex flex-col items-center text-center">
+      <img src="img/equipo/equipo-2.jpg" alt="Analia Radl" class="h-32 w-32 rounded-full mb-4">
+      <p class="font-semibold mb-4 text-[#0039cc]">Analia Radl</p>
+      <p class="text-gray-800 text-sm">Facultad de Ciencias Naturales, Matemáticas y del Medio Ambiente</p>
+      <p class="font-semibold text-[#0039cc] text-sm">aradl@utem.cl</p>
+    </div>
+
+    <!-- Miembro 2 -->
+    <div class="flex flex-col items-center text-center">
+      <img src="img/equipo/equipo-3.jpg" alt="Constanza Carcamo" class="h-32 w-32 rounded-full mb-4">
+      <p class="font-semibold mb-4 text-[#0039cc]">Constanza Carcamo</p>
+      <p class="text-gray-800 text-sm">Facultad de Administración y Economía / Facultad de Humanidades y Tecnologías de las Ciencias Sociales / Facultad de Ciencias Jurídicas y Sociales</p>
+      <p class="font-semibold text-[#0039cc] text-sm">ccarcamo@utem.cl</p>
+    </div>
+
+    <!-- Miembro 3 -->
+    <div class="flex flex-col items-center text-center">
+      <img src="img/equipo/equipo-4.jpg" alt="Edison Matamala" class="h-32 w-32 rounded-full mb-4">
+      <p class="font-semibold mb-4 text-[#0039cc]">Edison Matamala</p>
+      <p class="text-gray-800 text-sm">Facultad de Ciencias de la Construcción y Ordenamiento Territorial</p>
+      <p class="font-semibold text-[#0039cc] text-sm">ematamala@utem.cl</p>
+    </div>
+
+    <!-- Miembro 4 -->
+    <div class="flex flex-col items-center text-center">
+      <img src="img/equipo/equipo-5.jpg" alt="Lily Sepúlveda" class="h-32 w-32 rounded-full mb-4">
+      <p class="font-semibold mb-4 text-[#0039cc]">Lily Sepúlveda</p>
+      <p class="text-gray-800 text-sm">Facultad de Ingeniería</p>
+      <p class="font-semibold text-[#0039cc] text-sm">isepulveda@utem.cl</p>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-[#333333] text-white">
+  <div class="mx-auto max-w-6xl px-6 sm:px-8 lg:px-16 py-10 grid grid-cols-1 md:grid-cols-[7fr_auto_3fr] gap-8">
+
+    <!-- BLOQUE IZQUIERDO -->
+    <div class="text-sm font-semibold">
+      <img src="logo-red-lab-utem.png" class="h-12 mb-14">
+      <p class="font-bold text-[#4e77e9] mb-0">Contáctenos:</p>
+      <p class="font-bold">+56 2 2787 0000</p>
+      <p class="font-bold">redlaboratorios@utem.cl</p>
+      <p class="font-bold">Dieciocho 161, Santiago - Chile.</p>
+      <p class="font-bold">Metro Moneda</p>
+    </div>
+
+    <!-- DIVISOR -->
+    <div class="hidden md:flex justify-center">
+      <div class="w-px bg-[#454545] h-full"></div>
+    </div>
+
+       <!-- BLOQUE DERECHO (30%) -->
+    <div class="flex flex-col items-start text-sm font-semibold">
+      <!-- REDES SOCIALES -->
+      <div class="flex space-x-4 mb-6 self-center">
+        <a href="https://www.facebook.com/?locale=es_LA">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="#4e77e9" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07C2 17.1 5.66 21.27 10.44 22v-7.03H7.9v-2.9h2.54V9.41c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.9h-2.34V22C18.34 21.27 22 17.1 22 12.07z"/>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="#4e77e9" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2a3 3 0 013 3v10a3 3 0 01-3 3H7a3 3 0 01-3-3V7a3 3 0 013-3h10zm-5 3.5A4.5 4.5 0 1016.5 12 4.51 4.51 0 0012 7.5zm0 7.4A2.9 2.9 0 1114.9 12 2.91 2.91 0 0112 14.9zM17.5 6.1a1.1 1.1 0 11-1.1-1.1 1.1 1.1 0 011.1 1.1z"/>
+          </svg>
+        </a>
+        <a href="https://cl.linkedin.com/">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="#4e77e9" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.98 3.5a2.5 2.5 0 110 5 2.5 2.5 0 010-5zM3 8.98h3.96V21H3V8.98zM9.5 8.98h3.8v1.64h.05a4.17 4.17 0 013.75-2.06c4.01 0 4.75 2.64 4.75 6.08V21H17.9v-5.54c0-1.32-.03-3.02-1.84-3.02-1.84 0-2.12 1.44-2.12 2.92V21H9.5V8.98z"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- RED DE LABORATORIOS + MENÚ -->
+      <div class="flex flex-col space-y-0">
+        <p class="font-bold text-[#4e77e9] mt-10">RED DE LABORATORIOS</p>
+        <a href="lared.html" class="hover:text-[#0853f9]">La Red</a>
+        <a href="laboratorios.html" class="hover:text-[#0853f9]">Laboratorios</a>
+        <a href="equipamiento.html" class="hover:text-[#0853f9]">Equipamientos</a>
+        <a href="solicitar_servicios.html" class="hover:text-[#0853f9]">Servicios</a>
+        <a href="contacto.html" class="hover:text-[#0853f9]">Contáctenos</a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="border-t border-white/30 py-4 text-center text-sm bg-black text-white">
+  © 2025 Red de Laboratorios UTEM. Todos los derechos reservados.
+  </div>
+</footer>
+
+<script>
+  const btn = document.getElementById('menuBtn');
+  const menu = document.getElementById('mobileMenu');
+  btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+</script>
+
+</body>
+</html>

@@ -6,123 +6,324 @@
   <title>Red de Laboratorios UTEM</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-gray-100 font-sans text-gray-800">
 
-<!-- HEADER PRINCIPAL -->
-<header class="bg-white shadow-lg border-b border-gray-200 relative z-50">
-  <div class="container mx-auto flex justify-between items-center p-4">
-    <div class="flex items-center">
-      <a href="index.html" class="flex items-center">
-        <img src="https://www.utem.cl/wp-content/themes/UTEM050925/images/01_img_cor/00_id_corp/ig_utem.svg" alt="UTEM LAB" class="h-12">
-        <span class="ml-3 font-bold text-xl text-blue-800 tracking-wide">UTEM LAB</span>
+<!-- ================= HEADER PRINCIPAL ================= -->
+<header class="bg-white border-b shadow-lg relative z-50">
+  <div class="mx-auto max-w-6xl px-6 sm:px-8 lg:px-16 py-4 flex justify-between items-center">
+
+    <!-- Logo -->
+    <a href="index.html">
+      <img src="logo-red-lab-utem.png" alt="UTEM LAB" class="h-12">
+    </a>
+
+    <!-- Botón hamburguesa -->
+    <button id="menuBtn"
+      class="md:hidden text-[#0853f9] text-2xl focus:outline-none"
+      aria-label="Abrir menú">
+      ☰
+    </button>
+
+    <!-- Menú desktop -->
+    <nav class="hidden md:flex items-center space-x-6 text-[#0039cc] font-medium">
+      <a href="https://investigacion.utem.cl/" target="_blank" class="hover:underline underline-offset-4">Investigación</a>
+      <span class="opacity-50">|</span>
+      <a href="https://www.utem.cl/"  target="_blank" class="hover:underline underline-offset-4">UTEM</a>
+      <a href="solicitar_servicios.html"
+        class="ml-4 bg-gradient-to-r from-[#AFCC46] to-[#64c2c8]
+               px-6 py-1 rounded-full shadow-md font-semibold hover:shadow-lg transition">
+        SOLICITAR SERVICIO
       </a>
-    </div>
+    </nav>
 
-    <!-- MENÚ PRINCIPAL -->
-    <nav class="flex items-center space-x-6">
-      <a href="index.html" class="text-blue-700 font-semibold transition">Inicio</a>
-      <a href="nosotros.html" class="text-gray-700 hover:text-blue-700 transition">Nosotros</a>
-      <a href="equipamiento.html" class="text-gray-700 hover:text-blue-700 transition">Equipamiento</a>
-      <a href="laboratorios.html" class="text-gray-700 hover:text-blue-700 transition">Laboratorios</a>
-      <a href="contacto.html" class="text-gray-700 hover:text-blue-700 transition">Contacto</a>
+  </div>
 
-      <!-- MENÚ DESPLEGABLE "OTROS" -->
-      <div class="relative group">
-        <button class="text-gray-700 hover:text-blue-700 transition flex items-center">
-          Otros
-          <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" stroke-width="2"
-               viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-               <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
-          </svg>
-        </button>
-        <div class="absolute hidden group-hover:block bg-white shadow-lg border rounded-md mt-2 w-56 z-50">
-          <a href="indicadores.html" class="block px-4 py-2 hover:bg-blue-50 text-gray-700">Indicadores</a>
-          <a href="reservar.html" class="block px-4 py-2 hover:bg-blue-50 text-gray-700">Reservar hora Laboratorio y Equipamiento</a>
-        </div>
-      </div>
+  <!-- Menú mobile -->
+  <div id="mobileMenu" class="hidden md:hidden border-t bg-white">
+    <nav class="flex flex-col px-6 py-6 space-y-5 text-[#0039cc]">
 
-      <a href="servicios.html" class="bg-gradient-to-r from-blue-700 to-cyan-600 text-white px-4 py-2 rounded shadow-md hover:shadow-lg transition">Solicitar Servicio</a>
+      <a href="https://investigacion.utem.cl/" target="_blank" class="font-semibold">Investigación</a>
+      <a href="https://www.utem.cl/" target="_blank" class="font-semibold">UTEM</a>
+
+      <hr>
+
+      <!-- Menú secundario integrado -->
+      <a href="lared.html" class="text-sm opacity-80">La Red</a>
+      <a href="equipamiento.html" class="text-sm opacity-80">Equipamiento</a>
+      <a href="laboratorios.html" class="text-sm opacity-80">Laboratorios</a>
+      <a href="contacto.html" class="text-sm opacity-80">Contacto</a>
+
+      <a href="servicios.html"
+        class="mt-4 bg-gradient-to-r from-[#AFCC46] to-[#64c2c8]
+               px-4 py-1 rounded-full text-center font-semibold">
+        SOLICITAR SERVICIO
+      </a>
     </nav>
   </div>
 </header>
 
-<!-- HERO -->
+<!-- ================= SEGUNDO MENÚ ================= -->
+<nav class="hidden md:block bg-[#0039cc] text-white">
+  <div class="mx-auto max-w-6xl px-6 sm:px-8 lg:px-16">
+    <ul class="flex justify-end items-center h-12 space-x-6 text-sm font-medium">
+      <li><a href="lared.html" class="hover:underline">La Red</a></li>
+      <li class="opacity-40">|</li>
+      <li><a href="equipamiento.html" class="hover:underline">Equipamiento</a></li>
+      <li class="opacity-40">|</li>
+      <li><a href="laboratorios.html" class="hover:underline">Laboratorios</a></li>
+      <li class="opacity-40">|</li>
+      <li><a href="contacto.html" class="hover:underline">Contacto</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
 <section class="relative">
-  <img src="img/banner.jpg" alt="Laboratorio UTEM" class="w-full h-[500px] object-cover">
-  <div class="absolute inset-0 bg-gray-900/50 flex flex-col justify-center items-center text-center px-6">
-    <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4 drop-shadow-lg">Red de Laboratorios de UTEM</h1>
-    <p class="text-lg md:text-xl max-w-2xl text-gray-200 mb-6 leading-relaxed">
-      La red de Laboratorios de la Universidad Tecnológica Metropolitana (UTEM) ofrece servicios de análisis
-      y ensayos en diversas áreas, con tecnología de punta y personal altamente calificado.
+  <img src="img/banner.jpg" class="w-full h-[500px] object-cover">
+  <div class="absolute inset-0 bg-black/50 flex flex-col justify-center items-center text-center px-6">
+    <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4">
+      Red de Laboratorios de UTEM
+    </h1>
+    <p class="text-lg md:text-xl max-w-2xl text-gray-200 mb-6">
+      Articulamos capacidades científicas y tecnológicas para fortalecer la investigación y la innovación con sentido público
     </p>
-    <a href="#laboratorios" class="bg-gradient-to-r from-blue-700 to-cyan-600 text-white px-6 py-3 rounded-lg shadow-lg hover:shadow-2xl transition font-semibold">
-      Explorar Laboratorios
+    <a href="#laboratorios"
+      class="border border-white text-white px-6 py-3 rounded-lg hover:bg-white/10 transition font-semibold">
+      + Información
     </a>
   </div>
 </section>
 
-<!-- ACCESO RÁPIDO -->
-<section class="container mx-auto py-20 px-6 text-center bg-gray-50 py-20">
-  <h2 class="text-3xl md:text-4xl font-bold text-blue-800 mb-12">Acceso Rápido</h2>
+<!-- ================= ACCESOS RÁPIDOS ================= -->
+<section class="container mx-auto py-20 px-6 text-center">
   <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-    <a href="laboratorios.html" class="group bg-white rounded-lg shadow-md hover:shadow-xl transition overflow-hidden">
-      <img src="img/ac-1.jpg" alt="Laboratorio" class="w-full h-48 object-cover group-hover:scale-105 transition-transform">
-      <div class="p-6">
-        <h3 class="font-semibold text-xl text-blue-700 mb-2">Laboratorios</h3>
+
+    <!-- Card -->
+    <a href="laboratorios.html" class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition">
+      <img src="img/ac-1.jpg" class="w-full h-48 object-cover group-hover:scale-105 transition">
+      <div class="absolute inset-0 bg-black/40"></div>
+      <div class="absolute inset-0 flex flex-col justify-center items-center text-white">
+        <h3 class="text-2xl font-bold">Laboratorios</h3>
+        <p class="text-sm mt-2"> Conoce los laboratorios de investigación que integran la Red y sus áreas de especialización</p>
       </div>
     </a>
-    <a href="servicios.html" class="group bg-white rounded-lg shadow-md hover:shadow-xl transition overflow-hidden">
-      <img src="img/ac-2.jpg" alt="Servicios" class="w-full h-48 object-cover group-hover:scale-105 transition-transform">
-      <div class="p-6">
-        <h3 class="font-semibold text-xl text-blue-700 mb-2">Servicios</h3>
+
+    <a href="equipamiento.html" class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition">
+      <img src="img/ac-2.jpg" class="w-full h-48 object-cover group-hover:scale-105 transition">
+      <div class="absolute inset-0 bg-black/40"></div>
+      <div class="absolute inset-0 flex flex-col justify-center items-center text-white">
+        <h3 class="text-2xl font-bold">Equipamiento</h3>
+        <p class="text-sm mt-2"></p>Explora el equipamiento científico y tecnológico disponible para investigación, análisis y desarrollo.</p>
       </div>
     </a>
-    <a href="contacto.html" class="group bg-white rounded-lg shadow-md hover:shadow-xl transition overflow-hidden">
-      <img src="img/ac-3.jpg" alt="Contacto" class="w-full h-48 object-cover group-hover:scale-105 transition-transform">
-      <div class="p-6">
-        <h3 class="font-semibold text-xl text-blue-700 mb-2">Contacto</h3>
+
+    <a href="solicitar_servicios.html" class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition">
+      <img src="img/ac-3.jpg" class="w-full h-48 object-cover group-hover:scale-105 transition">
+      <div class="absolute inset-0 bg-black/40"></div>
+      <div class="absolute inset-0 flex flex-col justify-center items-center text-white">
+        <h3 class="text-2xl font-bold">Servicios</h3>
+        <p class="text-sm mt-2"></p>Descubre los servicios especializados que ofrecen nuestros laboratorios a la academia, la industria y la sociedad.</p>
       </div>
     </a>
+
   </div>
 </section>
 
-<!-- LABORATORIOS DESTACADOS -->
-<section id="laboratorios" class="container mx-auto py-20 px-6 text-center bg-gray-100 py-20">
-  <h2 class="text-3xl md:text-4xl font-bold text-blue-800 mb-12">Laboratorios Destacados</h2>
+
+<section class="bg-[#0853f9] text-white py-12">
+  <div class="relative mx-auto px-6 max-w-full lg:max-w-[70%] h-[260px]">
+
+    <!-- Radios -->
+    <input type="radio" name="carousel" id="slide1" class="hidden peer/one" checked>
+    <input type="radio" name="carousel" id="slide2" class="hidden peer/two">
+    <input type="radio" name="carousel" id="slide3" class="hidden peer/three">
+
+    <!-- Slide 1 -->
+    <div class="absolute inset-0 hidden peer-checked/one:flex items-center justify-center gap-6">
+      <label for="slide3" class="absolute left-0 text-3xl cursor-pointer">‹</label>
+      <label for="slide2" class="absolute right-0 text-3xl cursor-pointer">›</label>
+
+   <a href="https://transferencia.utem.cl/prensa/el-acuerdo-entre-labinbio-y-polynatural-que-permitira-acelerar-proyecto-de-investigacion-y-desarrollo" target="_blank" class="flex items-center gap-6">
+  <img src="img/5.jpg" class="w-48 h-48 rounded-full border-4 border-white object-cover">
+  <div class="max-w-md">
+    <h3 class="text-xl font-bold">Red de Laboratorios UTEM consolida hito institucional con la adscripción de 47 unidades</h3>
+    <p class="mt-2 opacity-90">
+      La Dirección de Investigación de la UTEM anunció un importante avance para el fortalecimiento de la investigación institucional: la adscripción oficial de 47 laboratorios a la Red de Laboratorios UTEM, formalizada mediante la Resolución Exenta N° 03068/2025.
+    </p>
+  </div>
+</a>
+
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="absolute inset-0 hidden peer-checked/two:flex items-center justify-center gap-6">
+      <label for="slide1" class="absolute left-0 text-3xl cursor-pointer">‹</label>
+      <label for="slide3" class="absolute right-0 text-3xl cursor-pointer">›</label>
+
+
+<a href="https://transferencia.utem.cl/prensa/labinbio_utem-y-comparini-lab-impulsaran-proyectos-de-investigacion-y-desarrollo-en-alimentos/" target="_blank" class="flex items-center gap-6">
+  <img src="img/6.jpg" class="w-48 h-48 rounded-full border-4 border-white object-cover">
+  <div class="max-w-md">
+    <h3 class="text-xl font-bold">Instituto Universitario de Investigación y Desarrollo Tecnológico de la UTEM obtiene importante registro de CORFO</h3>
+    <p class="mt-2 opacity-90">
+      El instituto fue incorporado al registro de centros de I+D de Corfo, reconocimiento que destaca su compromiso con la generación de conocimiento científico-tecnológico de excelencia y su transferencia al sector productivo y social.
+    </p>
+  </div>
+</a>
+
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="absolute inset-0 hidden peer-checked/three:flex items-center justify-center gap-6">
+      <label for="slide2" class="absolute left-0 text-3xl cursor-pointer">‹</label>
+      <label for="slide1" class="absolute right-0 text-3xl cursor-pointer">›</label>
+
+      <a href="https://transferencia.utem.cl/prensa/utem-y-ascend-laboratories-unen-ciencia-y-empresa-para-impulsar-investigacion-en-biodisponibilidad-de-farmacos/" target="_blank" class="flex items-center gap-6">
+        <img src="img/7.jpg" class="w-48 h-48 rounded-full border-4 border-white object-cover">
+        <div class="max-w-md">
+          <h3 class="text-xl font-bold">El acuerdo entre LabInBio y PolyNatural que permitirá acelerar proyecto de investigación y desarrollo</h3>
+          <p class="mt-2 opacity-90">
+            El Laboratorio de Ingeniería en Bioprocesos, de la Universidad Tecnológica Metropolitana (UTEM), aportará con know-how a la empresa chilena que desarrolla productos para extender la vida útil de las frutas durante su post cosecha, en línea con el cuidado del medio ambiente y la sustentabilidad.
+          </p>
+        </div>
+      </a>
+    </div>
+
+    <!-- DOTS -->
+    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 flex gap-3">
+      <label for="slide1" class="w-3 h-3 bg-white rounded-full cursor-pointer"></label>
+      <label for="slide2" class="w-3 h-3 bg-white rounded-full cursor-pointer"></label>
+      <label for="slide3" class="w-3 h-3 bg-white rounded-full cursor-pointer"></label>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="container mx-auto py-20 px-6 text-center">
   <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-    <div class="group bg-white rounded-lg shadow-md hover:shadow-xl transition overflow-hidden">
-      <img src="img/ac-lab-1.jpg" alt="Laboratorio Química" class="w-full h-48 object-cover group-hover:scale-105 transition-transform">
-      <div class="p-6">
-        <h3 class="font-semibold text-lg text-blue-700 mb-2">Laboratorio Química</h3>
+    
+    <!-- CARD 1 -->
+    <a href="laboratorio_ficha.html" class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition">
+      <!-- Imagen -->
+      <img src="img/ac-1.jpg" alt="Laboratorio" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500">
+      
+      <!-- Overlay azul Pantone 286 (30% desde abajo) -->
+      <div class="absolute bottom-0 inset-x-0 h-[30%] bg-[#0853f9]/70 group-hover:bg-[#0853f9]/80 transition duration-500"></div>
+      
+      <!-- Texto sobre imagen -->
+      <div class="absolute bottom-0 inset-x-0 h-[30%] flex flex-col justify-start items-start p-4 text-white">
+        <h3 class="font-bold text-lg mb-2">Laboratorio Transversal de Biotecnología</h3>
+        <!-- <p class="text-xs leading-relaxed">
+          Facultad de Ciencias de la Construcción<br>
+        </p> -->
       </div>
-    </div>
-    <div class="group bg-white rounded-lg shadow-md hover:shadow-xl transition overflow-hidden">
-      <img src="img/ac-lab-2.jpg" alt="Laboratorio Física" class="w-full h-48 object-cover group-hover:scale-105 transition-transform">
-      <div class="p-6">
-        <h3 class="font-semibold text-lg text-blue-700 mb-2">Laboratorio Física</h3>
+    </a>
+    
+    <!-- CARD 2 -->
+    <a href="laboratorio_ficha.html" class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition">
+      <img src="img/ac-2.jpg" alt="Servicios" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500">
+      <div class="absolute bottom-0 inset-x-0 h-[30%] bg-[#0853f9]/70 group-hover:bg-[#0853f9]/80 transition duration-500"></div>
+      <div class="absolute bottom-0 inset-x-0 h-[30%] flex flex-col justify-start items-start p-4 text-white">
+        <h3 class="font-bold text-lg mb-2">Laboratorio de Materiales</h3>
+        <!-- <p class="text-xs leading-relaxed">
+          Breve descripción del equipamiento disponible.<br>
+        </p> -->
       </div>
-    </div>
-    <div class="group bg-white rounded-lg shadow-md hover:shadow-xl transition overflow-hidden">
-      <img src="img/ac-lab-3.jpg" alt="Laboratorio Biología" class="w-full h-48 object-cover group-hover:scale-105 transition-transform">
-      <div class="p-6">
-        <h3 class="font-semibold text-lg text-blue-700 mb-2">Laboratorio Biología</h3>
+    </a>
+    
+    <!-- CARD 3 -->
+    <a href="laboratorio_ficha.html" class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition">
+      <img src="img/ac-3.jpg" alt="Contacto" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500">
+      <div class="absolute bottom-0 inset-x-0 h-[30%] bg-[#0853f9]/70 group-hover:bg-[#0853f9]/80 transition duration-500"></div>
+      <div class="absolute bottom-0 inset-x-0 h-[30%] flex flex-col justify-start items-start p-4 text-white">
+        <h3 class="font-bold text-lg mb-2">Laboratorio de Energías Renovables</h3>
+        <!-- <p class="text-xs leading-relaxed">
+          Información rápida de contacto y servicios ofrecidos.<br>
+        </p> -->
       </div>
-    </div>
-    <div class="group bg-white rounded-lg shadow-md hover:shadow-xl transition overflow-hidden">
-      <img src="img/ac-lab-4.jpg" alt="Laboratorio XXX" class="w-full h-48 object-cover group-hover:scale-105 transition-transform">
-      <div class="p-6">
-        <h3 class="font-semibold text-lg text-blue-700 mb-2">Laboratorio XXX</h3>
+    </a>
+
+    <!-- CARD 4 -->
+    <a href="laboratorio_ficha.html" class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition">
+      <img src="img/ac-4.jpg" alt="Noticias" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500">
+      <div class="absolute bottom-0 inset-x-0 h-[30%] bg-[#0853f9]/70 group-hover:bg-[#0853f9]/80 transition duration-500"></div>
+      <div class="absolute bottom-0 inset-x-0 h-[30%] flex flex-col justify-start items-start p-4 text-white">
+        <h3 class="font-bold text-lg mb-2">Laboratorio de Electroquímica</h3>
+        <!-- <p class="text-xs leading-relaxed">
+          Mantente al tanto de las últimas novedades.<br>
+        </p> -->
       </div>
-    </div>
+    </a>
+    
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="bg-gray-800 text-white py-8 mt-16">
-  <div class="container mx-auto text-center">
-    <p>© 2025 Red de Laboratorios UTEM. Todos los derechos reservados.</p>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-[#333333] text-white">
+  <div class="mx-auto max-w-6xl px-6 sm:px-8 lg:px-16 py-10 grid grid-cols-1 md:grid-cols-[7fr_auto_3fr] gap-8">
+
+    <!-- BLOQUE IZQUIERDO -->
+    <div class="text-sm font-semibold">
+      <img src="logo-red-lab-utem.png" class="h-12 mb-14">
+      <p class="font-bold text-[#4e77e9] mb-0">Contáctenos:</p>
+      <p class="font-bold">+56 2 2787 0000</p>
+      <p class="font-bold">redlaboratorios@utem.cl</p>
+      <p class="font-bold">Dieciocho 161, Santiago - Chile.</p>
+      <p class="font-bold">Metro Moneda</p>
+    </div>
+
+    <!-- DIVISOR -->
+    <div class="hidden md:flex justify-center">
+      <div class="w-px bg-[#454545] h-full"></div>
+    </div>
+
+       <!-- BLOQUE DERECHO (30%) -->
+    <div class="flex flex-col items-start text-sm font-semibold">
+      <!-- REDES SOCIALES -->
+      <div class="flex space-x-4 mb-6 self-center">
+        <a href="https://www.facebook.com/?locale=es_LA">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="#4e77e9" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07C2 17.1 5.66 21.27 10.44 22v-7.03H7.9v-2.9h2.54V9.41c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.9h-2.34V22C18.34 21.27 22 17.1 22 12.07z"/>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="#4e77e9" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2a3 3 0 013 3v10a3 3 0 01-3 3H7a3 3 0 01-3-3V7a3 3 0 013-3h10zm-5 3.5A4.5 4.5 0 1016.5 12 4.51 4.51 0 0012 7.5zm0 7.4A2.9 2.9 0 1114.9 12 2.91 2.91 0 0112 14.9zM17.5 6.1a1.1 1.1 0 11-1.1-1.1 1.1 1.1 0 011.1 1.1z"/>
+          </svg>
+        </a>
+        <a href="https://cl.linkedin.com/">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="#4e77e9" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.98 3.5a2.5 2.5 0 110 5 2.5 2.5 0 010-5zM3 8.98h3.96V21H3V8.98zM9.5 8.98h3.8v1.64h.05a4.17 4.17 0 013.75-2.06c4.01 0 4.75 2.64 4.75 6.08V21H17.9v-5.54c0-1.32-.03-3.02-1.84-3.02-1.84 0-2.12 1.44-2.12 2.92V21H9.5V8.98z"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- RED DE LABORATORIOS + MENÚ -->
+      <div class="flex flex-col space-y-0">
+        <p class="font-bold text-[#4e77e9] mt-10">RED DE LABORATORIOS</p>
+        <a href="lared.html" class="hover:text-[#0853f9]">La Red</a>
+        <a href="laboratorios.html" class="hover:text-[#0853f9]">Laboratorios</a>
+        <a href="equipamiento.html" class="hover:text-[#0853f9]">Equipamientos</a>
+        <a href="solicitar_servicios.html" class="hover:text-[#0853f9]">Servicios</a>
+        <a href="contacto.html" class="hover:text-[#0853f9]">Contáctenos</a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="border-t border-white/30 py-4 text-center text-sm bg-black text-white">
+  © 2025 Red de Laboratorios UTEM. Todos los derechos reservados.
   </div>
 </footer>
+
+<script>
+  const btn = document.getElementById('menuBtn');
+  const menu = document.getElementById('mobileMenu');
+  btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+</script>
 
 </body>
 </html>
